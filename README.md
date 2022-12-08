@@ -15,7 +15,7 @@ The app would be used by clients (who need their project designed and built), ex
 #### Member Pages
 
 - memberTasks page --> shows all tasks assigned to this dev/designer
-- memberEditTask --> allows the user to inspect the task and update the date it was finished and the hours that it took to complete
+- memberEditTask --> allows the user to inspect the task and update the date it was finished and the hours that it took to complete (POST)
 
 #### Lead Pages
 

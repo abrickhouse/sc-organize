@@ -2,39 +2,7 @@ from flask import Blueprint, request, jsonify, make_response
 import json
 from src import db
 
-
 leaders = Blueprint('leaders', __name__)
-
-# Get all the products from the database
-
-
-@leaders.route('/', methods=['GET'])
-def lead_one():
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
-    cursor.execute(
-        'select productCode, productName, productVendor from products')
-
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers.
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
-
-# get the top 5 products from the database
 
 
 @leaders.route('/<id>team')  # need the lead_ID
@@ -70,29 +38,6 @@ def lead_three(id):
         FROM TASK
         WHERE date_assigned IS NULL AND {0} = lead_ID;
     '''.format(id)
-    cursor.execute(query)
-    column_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
-
-
-@leaders.route('/assigningtaskdetail')
-def lead_four():
-    cursor = db.get_db().cursor()
-    # update request to TASK to add the memberID of person assigned
-    # this will have to deal with POST as well
-    # the get should get the name, type, date_assigned = today, and description
-    query = '''
-        SELECT p.productCode, productName, sum(quantityOrdered) as totalOrders
-        FROM products p JOIN orderdetails od on p.productCode = od.productCode
-        GROUP BY p.productCode, productName
-        ORDER BY totalOrders DESC
-        LIMIT 5;
-    '''
     cursor.execute(query)
     column_headers = [x[0] for x in cursor.description]
     json_data = []

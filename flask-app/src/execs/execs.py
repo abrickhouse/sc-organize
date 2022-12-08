@@ -1,13 +1,7 @@
-# from app import db
-# from ..flask-app.app import db
 from flask import Blueprint, request, jsonify, make_response
 import json
 from src import db
-# import sys
-# sys.path.append('../..')
 
-
-# Get all the products from the database
 execs = Blueprint('execs', __name__)
 
 
@@ -27,8 +21,6 @@ def exec_two(id):
 
     return jsonify(json_data)
 
-# get the top 5 products from the database
-
 
 @execs.route('/assigningclient')
 def exec_one():
@@ -42,18 +34,9 @@ def exec_one():
         LIMIT 1;
     '''
     cursor.execute(query)
-    # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in
-    # putting column headers together with data
     json_data = []
-
-    # fetch all the data from the cursor
     theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers.
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
@@ -62,8 +45,6 @@ def exec_one():
 
 @execs.route('/assigningclientcli')
 def exec_oneother():
-    # post/update request to TEAM (i think)
-    # i want to delete this one maybe
     cursor = db.get_db().cursor()
     query = '''
         SELECT date_applied, name
@@ -74,16 +55,8 @@ def exec_oneother():
     cursor.execute(query)
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in
-    # putting column headers together with data
     json_data = []
-
-    # fetch all the data from the cursor
     theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers.
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 

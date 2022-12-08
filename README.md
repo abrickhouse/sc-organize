@@ -8,6 +8,29 @@ The app would be used by clients (who need their project designed and built), ex
 
 **Link to Pitch Video**: <a href="#">link</a>
 
+## Details
+
+- home page --> user enters the user type and specific user they want to proceed as
+
+#### Member Pages
+
+- memberTasks page --> shows all tasks assigned to this dev/designer
+- memberEditTask --> allows the user to inspect the task and update the date it was finished and the hours that it took to complete
+
+#### Lead Pages
+
+- leadTeam page --> shows all members of the team that the lead runs
+- leadUnassignTasks page --> shows all unassigned tasks of the project that the lead is assigned to
+
+#### Executive Pages
+
+- execDashboard --> shows all projects
+
+#### Client Pages
+
+- Project Details page --> client can see all of the revelant information about the project that the team is building
+- AddTask page --> client can add a task that they want the team to complete (POST)
+
 ## How to setup and start the containers
 
 **Important** - you need Docker Desktop installed

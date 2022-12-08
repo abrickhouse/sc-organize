@@ -346,95 +346,57 @@ insert into EXECUTIVE (exec_ID, name, email, role) values (2, 'Sidoney', 'smaggi
 insert into EXECUTIVE (exec_ID, name, email, role) values (3, 'Natty', 'nreuter2@livejournal.com', 'Information Systems Manager');
 
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Stronghold', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
-
 Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
-
 Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
 Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 'Fall 2022', 1, 'Typescript', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Tempsoft', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
 Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
 Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
 Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'Fall 2022', 1, 'Javascript', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Bitwolf', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
-
 In congue. Etiam justo. Etiam pretium iaculis justo.
-
 In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
 Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 'Fall 2022', 1, 'Javascript', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Kawa', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
 Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 'Fall 2022', 1, 'Javascript', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Rank', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
 In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
 Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
 Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 'Fall 2022', 1, 'Javascript', 'Java');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Stim', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
 Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
-
 Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'Fall 2022', 1, 'Javascript', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Stereo', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
 Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
 In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
 Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'Fall 2022', 1, 'Javascript', 'Java');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Treeflex', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
 Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
 Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'Fall 2022', 1, 'HTML/CSS', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Biodex', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
 In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
 Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'Fall 2022', 1, 'Javascript', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Magicians', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
 Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
 Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'Fall 2022', 1, 'Javascript', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Cookley', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
 Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
-
 Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 'Fall 2022', 1, 'Typescript', 'Java');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Asoka', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
-
 Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
 Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 'Fall 2022', 1, 'Typescript', 'Python');
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 'Fall 2022', NULL, 'Typescript', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Tin', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
 Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
 Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
-
 Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 'Fall 2022', 1, 'Javascript', 'Java');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Latlux', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
 Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
 Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 'Fall 2022', 1, 'Javascript', 'Python');
 insert into PROJECT (title, description, semester, exec_ID, frontLang, backLang) values ('Flowdesk', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
 Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
 Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
-
 Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'Fall 2022', 1, 'Javascript', 'PHP');
 
 insert into TEAM (team_ID, proj_title, lead_ID, exec_ID) values (1, 'Tempsoft', 1, 1);
@@ -455,12 +417,12 @@ insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (2, 'Danice', 'dpreto1@goodreads.com', 'Developer', 15, 12, 1, 2);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (3, 'Irvin', 'igodber2@squidoo.com', 'Developer', 10, 5, 4, 12);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (4, 'Velma', 'vsorbey3@t.co', 'Fiorile', 18, 0, 12, 5);
-insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (5, 'Callean', 'cblaskett4@alibaba.com', 'Developer', 11, 8, 10, 3);
+insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (5, 'Callean', 'cblaskett4@alibaba.com', 'Developer', 11, 8, 3, 10);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (6, 'Pammy', 'pblanchette5@wordpress.org', 'Designer', 1, 12, 15, 8);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (7, 'Terry', 'tcrat6@netlog.com', 'Developer', 5, 10, 12, 2);
-insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (8, 'Kitty', 'kvigar7@exblog.jp', 'Designer', 13, 12, 14, 4);
-insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (9, 'Richie', 'rriseam8@alibaba.com', 'Developer', 17, 10, 15, 10);
-insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (10, 'Erwin', 'eslatten9@ibm.com', 'Designer', 10, 8, 3, 4);
+insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (8, 'Kitty', 'kvigar7@exblog.jp', 'Designer', 13, 12, 3, 10);
+insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (9, 'Richie', 'rriseam8@alibaba.com', 'Developer', 17, 10, 3, 10);
+insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (10, 'Erwin', 'eslatten9@ibm.com', 'Designer', 10, 8, 3, 10);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (11, 'Corissa', 'cshawcrossa@aol.com', 'Developer', 5, 14, 14, 6);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (12, 'Jason', 'jboastb@hp.com', 'Designer', 5, 3, 15, 5);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (13, 'Gare', 'gphilippc@theglobeandmail.com', 'Designer', 12, 2, 4, 9);
@@ -471,7 +433,7 @@ insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (18, 'Bronson', 'btoulminh@reuters.com', 'Designer', 2, 11, 10, 7);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (19, 'Marlo', 'mmounsiei@dion.ne.jp', 'Designer', 12, 1, 14, 12);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (20, 'Leigha', 'lkenwortheyj@timesonline.co.uk', 'Developer', 18, 13, 14, 2);
-insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (21, 'Yvonne', 'ydunkertonk@forbes.com', 'Developer', 7, 7, 9, 9);
+insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (21, 'Yvonne', 'ydunkertonk@forbes.com', 'Developer', 7, 7, 3, 10);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (22, 'Tan', 'tdoyleyl@tuttocitta.it', 'Designer', 2, 1, 12, 9);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (23, 'Hildegarde', 'hkeenorm@hostgator.com', 'Designer', 10, 5, 5, 7);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (24, 'Isa', 'ifairhamn@ed.gov', 'Designer', 3, 1, 12, 6);
@@ -482,7 +444,7 @@ insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (29, 'Jeanette', 'jtennicks@sphinn.com', 'Designer', 15, 6, 12, 11);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (30, 'Phillida', 'pmcmastert@vk.com', 'Developer', 8, 3, 4, 9);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (31, 'Sid', 'sbarsamu@hibu.com', 'Developer', 0, 9, 14, 1);
-insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (32, 'Gaultiero', 'goppyv@soup.io', 'Designer', 11, 11, 13, 11);
+insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (32, 'Gaultiero', 'goppyv@soup.io', 'Designer', 11, 11, 3, 10);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (33, 'Susan', 'slarkcumw@gnu.org', 'Developer', 3, 6, 8, 5);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (34, 'Minna', 'mpetlyurax@unicef.org', 'Developer', 2, 7, 1, 4);
 insert into MEMBER (member_ID, name, email, role, total_hours, tasks_in_progress, lead_ID, team_ID) values (35, 'Rosina', 'rchessony@jalbum.net', 'Designer', 6, 13, 7, 9);
@@ -504,7 +466,7 @@ insert into CLIENTS (proj_title, name, email, client_ID, date_applied, exec_ID) 
 insert into CLIENTS (proj_title, name, email, client_ID, date_applied, exec_ID) values ('Biodex', 'Alyson Horley', 'ahorley8@china.com.cn', 9, '2022-8-18', 1);
 insert into CLIENTS (proj_title, name, email, client_ID, date_applied, exec_ID) values ('Magicians', 'Eleonora Feedham', 'efeedham9@typepad.com', 10, '2022-8-9', 1);
 insert into CLIENTS (proj_title, name, email, client_ID, date_applied, exec_ID) values ('Cookley', 'Felita Yukhnini', 'fyukhninia@free.fr', 11, '2022-8-25', 1);
-insert into CLIENTS (proj_title, name, email, client_ID, date_applied, exec_ID) values ('Asoka', 'Merrili Lougheid', 'mloughheid@free.fr', 12, '2022-8-24', 1);
+insert into CLIENTS (proj_title, name, email, client_ID, date_applied, exec_ID) values ('Asoka', 'Merrili Lougheid', 'mloughheid@free.fr', 12, '2022-8-24', NULL);
 insert into CLIENTS (proj_title, name, email, client_ID, date_applied, exec_ID) values ('Tin', 'Murielle Woolnough', 'mwoolnoughc@accuweather.com', 13, '2022-8-18', 1);
 insert into CLIENTS (proj_title, name, email, client_ID, date_applied, exec_ID) values ('Latlux', 'Lula Sorro', 'lsorrod@nationalgeographic.com', 14, '2022-8-10', 1);
 insert into CLIENTS (proj_title, name, email, client_ID, date_applied, exec_ID) values ('Flowdesk', 'Roda Castilljo', 'rcastilljoe@skype.com', 15, '2022-8-27', 1);
@@ -554,7 +516,7 @@ insert into TASK (name, proj_title, client_ID, type, member_ID, lead_ID, task_nu
 
 Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.');
 insert into TASK (name, proj_title, client_ID, type, member_ID, lead_ID, task_number, date_assigned, date_due, date_finished, completion_status, hours, description) values ('Customer-focused intangible success', 'Biodex', 5, 'Design', 9, 9, 23, '2022-10-4', '2022-10-14', '2022-10-31', true, 5, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.');
-insert into TASK (name, proj_title, client_ID, type, member_ID, lead_ID, task_number, date_assigned, date_due, date_finished, completion_status, hours, description) values ('Balanced local access', 'Biodex', 3, 'Design', 35, 3, 24, '2022-10-9', '2022-11-25', null, false, null, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.');
+insert into TASK (name, proj_title, client_ID, type, member_ID, lead_ID, task_number, date_assigned, date_due, date_finished, completion_status, hours, description) values ('Balanced local access', 'Biodex', 3, 'Design', 35, 3, 24, null, '2022-11-25', null, false, null, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.');
 insert into TASK (name, proj_title, client_ID, type, member_ID, lead_ID, task_number, date_assigned, date_due, date_finished, completion_status, hours, description) values ('Stand-alone static initiative', 'Biodex', 11, 'Design', 38, 1, 25, '2022-10-19', '2022-10-21', null, false, null, 'In congue. Etiam justo. Etiam pretium iaculis justo.');
 insert into TASK (name, proj_title, client_ID, type, member_ID, lead_ID, task_number, date_assigned, date_due, date_finished, completion_status, hours, description) values ('Extended intermediate concept', 'Biodex', 1, 'Design', 8, 12, 26, '2022-10-16', '2022-11-12', '2022-11-2', true, 10, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.');
 insert into TASK (name, proj_title, client_ID, type, member_ID, lead_ID, task_number, date_assigned, date_due, date_finished, completion_status, hours, description) values ('Customizable client-server core', 'Biodex', 1, 'Design', 25, 1, 27, '2022-10-29', '2022-10-31', null, false, null, 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.');

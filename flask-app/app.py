@@ -5,44 +5,79 @@
 # import the create app function
 # that lives in src/__init__.py
 from src import create_app
-from src.leaders.leaders import leaders
-from src.execs.execs import execs
-from src.members.members import members
-from src.scclients.scclients import scclients
-from flask import Flask, jsonify
-from flaskext.mysql import MySQL
+# from src.leaders.leaders import leaders
+# from src.execs.execs import execs
+# from src.members.members import members
+# from src.scclients.scclients import scclients
+# from flask import Flask, jsonify
+# from flaskext.mysql import MySQL
 
 # create the app object
-# app = create_app()
+app = create_app()
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
-app.config['MYSQL_DATABASE_HOST'] = 'db'
-app.config['MYSQL_DATABASE_PORT'] = 3306
-app.config['MYSQL_DATABASE_USER'] = 'word'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'abc123'
-app.config['MYSQL_DATABASE_DB'] = 'sc_app'
+# app.config['MYSQL_DATABASE_HOST'] = 'db'
+# app.config['MYSQL_DATABASE_PORT'] = 3306
+# app.config['MYSQL_DATABASE_USER'] = 'word'
+# app.config['MYSQL_DATABASE_PASSWORD'] = 'abc123'
+# app.config['MYSQL_DATABASE_DB'] = 'sc_app'
 
-db_connection = MySQL()
-db_connection.init_app(app)
+# db_connection = MySQL()
+# db_connection.init_app(app)
 
-app.register_blueprint(leaders, url_prefix='/lead')
-app.register_blueprint(execs, url_prefix='/ex')
-app.register_blueprint(members, url_prefix='/mem')
-app.register_blueprint(scclients, url_prefix='/cli')
+# app.register_blueprint(leaders, url_prefix='/lead')
+# app.register_blueprint(execs, url_prefix='/ex')
+# app.register_blueprint(members, url_prefix='/mem')
+# app.register_blueprint(scclients, url_prefix='/cli')
 
 
-@app.route('/')
-def db_testing():
-    # what should home page be???
-    cur = db_connection.get_db().cursor()
-    cur.execute('select * from PROJECT')
-    row_headers = [x[0] for x in cur.description]
-    json_data = []
-    theData = cur.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    return jsonify(json_data)
+# @app.route('/homemem')
+# def db_testingmem():
+#     cur = db_connection.get_db().cursor()
+#     cur.execute('select name, member_ID as id from MEMBER')
+#     row_headers = [x[0] for x in cur.description]
+#     json_data = []
+#     theData = cur.fetchall()
+#     for row in theData:
+#         json_data.append(dict(zip(row_headers, row)))
+#     return jsonify(json_data)
+
+
+# @app.route('/homelead')
+# def db_testinglead():
+#     cur = db_connection.get_db().cursor()
+#     cur.execute('select name, lead_ID as id from LEADER')
+#     row_headers = [x[0] for x in cur.description]
+#     json_data = []
+#     theData = cur.fetchall()
+#     for row in theData:
+#         json_data.append(dict(zip(row_headers, row)))
+#     return jsonify(json_data)
+
+
+# @app.route('/homeexec')
+# def db_testingexec():
+#     cur = db_connection.get_db().cursor()
+#     cur.execute('select name, exec_ID as id from EXECUTIVE')
+#     row_headers = [x[0] for x in cur.description]
+#     json_data = []
+#     theData = cur.fetchall()
+#     for row in theData:
+#         json_data.append(dict(zip(row_headers, row)))
+#     return jsonify(json_data)
+
+
+# @app.route('/homecli')
+# def db_testingcli():
+#     cur = db_connection.get_db().cursor()
+#     cur.execute('select name, proj_title as id from CLIENTS')
+#     row_headers = [x[0] for x in cur.description]
+#     json_data = []
+#     theData = cur.fetchall()
+#     for row in theData:
+#         json_data.append(dict(zip(row_headers, row)))
+#     return jsonify(json_data)
 
 
 if __name__ == '__main__':

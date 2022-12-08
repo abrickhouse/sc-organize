@@ -1,24 +1,47 @@
+# from app import db
+# from ..flask-app.app import db
 from flask import Blueprint, request, jsonify, make_response
 import json
 from src import db
+# import sys
+# sys.path.append('../..')
 
-
-execs = Blueprint('execs', __name__)
 
 # Get all the products from the database
+execs = Blueprint('execs', __name__)
 
 
-@execs.route('/dashboard', methods=['GET'])
-def get_products():
+@execs.route('/<id>dashboard')
+def exec_two(id):
     # get a cursor object from the database
-    # get request to PROJECT for like evrything I guess,
-    # also TASKS to get finished/total
+    # access PROJECT details
     cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
     cursor.execute(
-        'select productCode, productName, productVendor from products')
+        'select title, description, frontLang, backLang, semester from PROJECT where exec_ID = {0}'.format(id))
 
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+# get the top 5 products from the database
+
+
+@execs.route('/assigningclient')
+def exec_one():
+    # post/update request to TEAM (i think)
+    # i want to delete this one maybe
+    cursor = db.get_db().cursor()
+    query = '''
+        SELECT title, description
+        FROM PROJECT
+        WHERE exec_ID = NULL
+        LIMIT 1;
+    '''
+    cursor.execute(query)
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
 
@@ -36,19 +59,17 @@ def get_products():
 
     return jsonify(json_data)
 
-# get the top 5 products from the database
 
-
-@execs.route('/assigningclient')
-def get_most_pop_products():
+@execs.route('/assigningclientcli')
+def exec_oneother():
     # post/update request to TEAM (i think)
+    # i want to delete this one maybe
     cursor = db.get_db().cursor()
     query = '''
-        SELECT p.productCode, productName, sum(quantityOrdered) as totalOrders
-        FROM products p JOIN orderdetails od on p.productCode = od.productCode
-        GROUP BY p.productCode, productName
-        ORDER BY totalOrders DESC
-        LIMIT 5;
+        SELECT date_applied, name
+        FROM CLIENTS
+        WHERE exec_ID = NULL
+        LIMIT 1;
     '''
     cursor.execute(query)
     # grab the column headers from the returned data
@@ -63,6 +84,44 @@ def get_most_pop_products():
 
     # for each of the rows, zip the data elements together with
     # the column headers.
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+
+@execs.route('/assigningtaskdevs')
+def execs_five():
+    cursor = db.get_db().cursor()
+    # select devs on this tea,
+    query = '''
+        SELECT name, member_ID as id 
+        FROM MEMBER 
+        WHERE role = 'Developer';
+    '''
+    cursor.execute(query)
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+
+@execs.route('/assigningtaskdes')
+def execs_six():
+    cursor = db.get_db().cursor()
+    # select designers
+    query = '''
+        SELECT name, member_ID as id
+        FROM MEMBER 
+        WHERE role = 'Designer';
+    '''
+    cursor.execute(query)
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
